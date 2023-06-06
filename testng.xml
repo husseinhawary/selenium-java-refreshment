@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Automation University Practices" verbose="5" parallel="tests">
+    <test name="Chrome Regression">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="login.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Regression">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="login.LoginTests"/>
+        </classes>
+    </test>
+</suite>
